@@ -15,7 +15,7 @@ router.get('/', async (req, res, next) => {
   
 router.get('/:id', validateId, async (req, res, next) => {
     try {
-        res.status(200).json(req.fruit)
+        res.status(200).json(req.car)
     } catch (err) {
          next(new ExpressError('error getting by id: ' + err.message, 500))
     }
